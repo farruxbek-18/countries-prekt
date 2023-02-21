@@ -1,4 +1,54 @@
+/* CUSTOM PROPS */
+:root{
+  --body-bg:#fafafa;
+  --element-bg:#fff;
+  --text-color:#111517;
+
+}
+ /* GLOBAL FANTS */
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+  url("../fonts/NunitoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Bold.woff2") format("woff2"),
+  url("../fonts/NunitoSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+  url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Light.woff2") format("woff2"),
+  url("../fonts/NunitoSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* GLOBAL */
+.dark-mod{
+  --body-bg:#202C36;
+  --element-bg:#2B3844;
+  --text-color:#fff;
+}
 html{
   height: 100%;
   scroll-behavior: smooth;
@@ -16,25 +66,36 @@ body{
   height: 100%;
   padding: 0px;
   margin: 0px;
-  font-family: "Arial",sans-serif;
+  font-family:"Nunito sans  ", "Arial",sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  background-color:var(--body-bg);
+  color:var(--text-color);
 }
 img{
   max-width: 100%;
   height: auto;
 }
+a{
+  text-decoration: none;
+}
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: auto;
 }
+
 /* MAI-CONTANENT */
 .main-content{
   flex-grow: 1;
+}
+.dark-button{
+  display: inline-block;
+  width: 90px;
+  border: 3px solid rgb(206, 186, 5);
+  height: 30px;
+  background-color:#3d474c
 }
