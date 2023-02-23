@@ -16,8 +16,8 @@
       <a class="sait__header-nav-link" href="./imdex.html">Where in the world?</a>
       <button class="sait__header-nav-button">
         <span class="header-nav-bt-img">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
-            <path fill="#fff" fill-rule="evenodd" stroke="#111517" stroke-width="1.25"
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17">
+            <path fill="#fff" fill-rule="evenodd" stroke="currentColor" stroke-width="1.25"
               d="M12.553 11.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618C3.691 2.695 1.5 5.331 1.5 8.438c0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 0 1-3.947 1.111Z"
               clip-rule="evenodd" />
           </svg>
@@ -67,8 +67,10 @@
 
           <!-- fleg item -->
           <li class="main__fleg-item">
-            <img class="fleg-item-img" src="./img/flag-igm/flag-germanya.jpg" alt="fleg contriy" width="264"
-              height="160" srcset="./img/flag-igm/flag-germanya.jpg 1x,./img/flag-igm/flag-germanya@2.jpg 2x">
+            <a href="./details.html">
+              <img class="fleg-item-img" src="./img/flag-igm/flag-germanya.jpg" alt="fleg contriy" width="264"
+                height="160" srcset="./img/flag-igm/flag-germanya.jpg 1x,./img/flag-igm/flag-germanya@2.jpg 2x">
+            </a>
             <div class="fleg-item-content">
               <h3 class="fleg-name">Germany</h3>
               <dl class="fleg-content-details">
@@ -90,8 +92,10 @@
 
           <!-- fleg item -->
           <li class="main__fleg-item">
-            <img class="fleg-item-img" src="./img/flag-igm/flag-amerika.jpg" alt="fleg contriy" width="264" height="160"
-              srcset="./img/flag-igm/flag-amerika.jpg 1x,./img/flag-igm/flag-amerika@2.jpg 2x">
+            <a href="./details.html">
+              <img class="fleg-item-img" src="./img/flag-igm/flag-amerika.jpg" alt="fleg contriy" width="264"
+                height="160" srcset="./img/flag-igm/flag-amerika.jpg 1x,./img/flag-igm/flag-amerika@2.jpg 2x">
+            </a>
             <div class="fleg-item-content">
               <h3 class="fleg-name">United States of America</h3>
               <dl class="fleg-content-details">
@@ -113,8 +117,10 @@
 
           <!-- fleg item -->
           <li class="main__fleg-item">
-            <img class="fleg-item-img" src="./img/flag-igm/flag-brazil.jpg" alt="fleg contriy" width="264" height="160"
-              srcset="./img/flag-igm/flag-brazil.jpg 1x,./img/flag-igm/flag-brazil@2.jpg 2x">
+            <a href="./details.html">
+              <img class="fleg-item-img" src="./img/flag-igm/flag-brazil.jpg" alt="fleg contriy" width="264"
+                height="160" srcset="./img/flag-igm/flag-brazil.jpg 1x,./img/flag-igm/flag-brazil@2.jpg 2x">
+            </a>
             <div class="fleg-item-content">
               <h3 class="fleg-name">Brazil</h3>
               <dl class="fleg-content-details">
@@ -136,8 +142,10 @@
 
           <!-- fleg item -->
           <li class="main__fleg-item">
-            <img class="fleg-item-img" src="./img/flag-igm/flag-icela.jpg" alt="fleg contriy" width="264" height="160"
-              srcset="./img/flag-igm/flag-icela.jpg 1x,./img/flag-igm/flag-icela@2.jpg 2x">
+            <a href="./details.html">
+              <img class="fleg-item-img" src="./img/flag-igm/flag-icela.jpg" alt="fleg contriy" width="264" height="160"
+                srcset="./img/flag-igm/flag-icela.jpg 1x,./img/flag-igm/flag-icela@2.jpg 2x">
+            </a>
             <div class="fleg-item-content">
               <h3 class="fleg-name">Iceland</h3>
               <dl class="fleg-content-details">
@@ -267,7 +275,7 @@
     const elNavButton = document.querySelector('.sait__header-nav-button');
 
     elNavButton.addEventListener('click', function () {
-      document.body.classList.add('dark-mod')
+      document.body.classList.toggle('dark-mod')
     });
 
 

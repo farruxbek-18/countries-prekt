@@ -71,6 +71,8 @@ body{
   line-height: 1.5;
   background-color:var(--body-bg);
   color:var(--text-color);
+  transition: background-color 0.4s ease,
+  color 0.4s ease;
 }
 img{
   max-width: 100%;
@@ -225,9 +227,7 @@ object-fit: cover;
   font-family: 'Nunito sans';
   margin-left: 20px;
 }
-.fleg-content-details {
 
-}
 .fleg-content-details-item {
   display: flex;
   padding: 5px 20px;
@@ -244,4 +244,113 @@ object-fit: cover;
   line-height: 16px;
   font-family: 'nunito sans';
   margin-left: 8px;
+}
+
+
+/* DETALS PEG */
+
+.sait-countri-back-link-box {
+  margin: 0px;
+  padding: 0px ;
+  margin-bottom: 80px;
+
+
+}
+.countri-back-link{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  width: 136px;
+  height: 40px;
+  background-color:var(--element-bg);
+  color:var(--text-color);
+  border-radius:8px;
+  box-shadow:0px 2px 8px rgba(76, 75, 75, 0.3)
+}
+
+.back-link-text {
+  font-family: 'nunito sans';
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-left: 8px;
+  color:var(--text-color);
+}
+
+/* DETALS MAIN HIRO */
+.main__details-hiro {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.details-hiro-fleg {
+  width: 45%;
+}
+.details-hiro-fleg-img {
+  width: 560px;
+  height: 401px;
+  object-fit: cover;
+}
+.details-hiro-info {
+  width: 45%;
+}
+.hiro-info-countri-name {
+  font-family: 'nunito sans';
+  font-size:32px;
+  line-height: 43px;
+  font-weight: 800;
+  margin: 40px 0px 23px 0px;
+  color:var(--text-color);
+}
+.hiro-info-box {
+  display: flex;
+}
+.info-box-details {
+  width: 50%;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+.info-box-item {
+  display: flex;
+  margin: 0px;
+}
+.info-box-titel {
+  font-family: 'nunito sans';
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0px;
+}
+.info-box-text {
+  font-family: 'nunito sans';
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 400;
+  margin: 0px;
+  margin-left: 8px  ;
+}
+.details-border-countri {
+  display: flex;
+}
+.border-countri-heder {
+  font-family: 'nunito sans';
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0px;
+}
+.details-border-countri-link {
+  width: 96px;
+  height: 28px;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: 'nunito sans';
+  font-weight: 300;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  box-shadow:0px 2px 9px rgba(109, 106, 106, 0.3);
+  background-color:var(--element-bg);
+  color:var(--text-color)
 }

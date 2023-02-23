@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>countries</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/stayil.css">
+</head>
+
+<body class="countres-body">
+  <header class="sait__header">
+    <div class="sait__header-container container">
+      <a class="sait__header-nav-link" href="./imdex.html">Where in the world?</a>
+      <button class="sait__header-nav-button">
+        <span class="header-nav-bt-img">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
+            <path fill="#fff" fill-rule="evenodd" stroke="currentcolor" stroke-width="1.25"
+              d="M12.553 11.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618C3.691 2.695 1.5 5.331 1.5 8.438c0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 0 1-3.947 1.111Z"
+              clip-rule="evenodd" />
+          </svg>
+        </span>
+        <span class="header-nav-bt-text">Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+
+
+  <!-- SAIT MAIN -->
+
+  <main class="sait-main details__main container">
+    <div class="sait-countri-back-link-box ">
+      <a class="countri-back-link" href="./imdex.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" fill=>
+          <path fill="currentColor" fill-rule="evenodd"
+            d="m6.464.107 1.179 1.179-3.89 3.889h14.85v1.65H3.753l3.89 3.889-1.179 1.179L.572 6 6.464.107Z"
+            clip-rule="evenodd" />
+        </svg>
+        <span class="back-link-text">Back</span>
+      </a>
+    </div>
+
+    <div class="main__details-hiro container">
+      <div class="details-hiro-fleg">
+        <img class="details-hiro-fleg-img" src="./img/flag-igm/flag-albanya.jpg" alt="fleg countri">
+      </div>
+      <div class="details-hiro-info">
+        <h2 class="hiro-info-countri-name">Belgium</h2>
+        <div class="hiro-info-box">
+          <dl class="info-box-details">
+            <div class="info-box-item">
+              <dt class="info-box-titel">Native Name:</dt>
+              <dd class="info-box-text">België</dd>
+            </div>
+
+            <div class="info-box-item">
+              <dt class="info-box-titel"> Population:</dt>
+              <dd class="info-box-text"> 11,319,511</dd>
+            </div>
+
+            <div class="info-box-item">
+              <dt class="info-box-titel">Region:</dt>
+              <dd class="info-box-text"> Europe</dd>
+            </div>
+
+            <div class="info-box-item">
+              <dt class="info-box-titel">Sub Region:</dt>
+              <dd class="info-box-text">Western Europe</dd>
+            </div>
+
+            <div class="info-box-item">
+              <dt class="info-box-titel">Capital:</dt>
+              <dd class="info-box-text">Brussels</dd>
+            </div>
+          </dl>
+
+          <dl class="info-box-details">
+            <div class="info-box-item">
+              <dt class="info-box-titel"> Top Level Domain:</dt>
+              <dd class="info-box-text"> .be</dd>
+            </div>
+
+            <div class="info-box-item">
+              <dt class="info-box-titel"> Currencies:</dt>
+              <dd class="info-box-text"> Euro</dd>
+            </div>
+
+            <div class="info-box-item">
+              <dt class="info-box-titel"> Languages:</dt>
+              <dd class="info-box-text"> Dutch, French, German</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="details-border-countri">
+          <h3 class="border-countri-heder">Border Countries: </h3>
+          <a class="details-border-countri-link" href="">France</a>
+          <a class="details-border-countri-link" href="">Germany</a>
+          <a class="details-border-countri-link" href="">Netherlands</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- script js -->
+  <script>
+
+    const elNavButton = document.querySelector('.sait__header-nav-button');
+
+    elNavButton.addEventListener('click', function () {
+      document.body.classList.toggle('dark-mod')
+    });
+
+
+  </script>
+
+</body>
+
+</html>
